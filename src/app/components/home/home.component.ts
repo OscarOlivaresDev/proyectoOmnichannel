@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { UsersService } from '../../service/users.service';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +8,11 @@ import { UsersService } from '../../service/users.service';
 })
 export class HomeComponent {
 
-  /*user$ = this.UsersService.currentUserProfile$;
-
-  users$ = this.UsersService.allUsers$;*/
+  selectUsers : any [] = ['Anónimo', 'María José', 'Carlos'];
+  fecha : Date = new Date();
+  message : string[] = ["Hola!"];
 
   searchControl = new FormControl('');
-  //constructor(private UsersService: UsersService){}
+  chatListControl = new FormControl();
+
 }

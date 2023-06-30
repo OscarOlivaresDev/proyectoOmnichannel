@@ -8,7 +8,6 @@ export interface Chat {
   userIds: string[];
   users: ProfileUser[];
 
-  // Not stored, only for display
   chatPic?: string;
   chatName?: string;
 }

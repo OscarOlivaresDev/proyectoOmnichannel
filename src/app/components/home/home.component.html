@@ -12,12 +12,68 @@
             </mat-form-field>
             <mat-autocomplete #users = "matAutocomplete">
                 <mat-option>
-                    Hello
+                    María José
                 </mat-option>
             </mat-autocomplete>
         </div>
+
+        <mat-selection-list [multiple]="false" [formControl]="chatListControl">
+            <mat-divider></mat-divider>
+            <mat-list-item *ngFor="let item of selectUsers">
+                <img matListItemAvatar [src]="'assets/img/image-placeholder.png'"/>
+                <p mat-line class="chat-title-list">
+                    <span class="chat-name">
+                        {{item}}
+                    </span>
+                    <span class="chat-date">
+                        {{fecha | date}}
+                    </span>
+                    <span class="chat-time">
+                        4min
+                    </span>
+                </p>
+                <p mat-line>
+                </p>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        </mat-selection-list>
     </div>
     <div class="messages mat-elevation-z5">
+        <i type="button" class="card-contact fa-solid fa-address-card"></i>
+        <i type="button" class="card-message fa-solid fa-message"></i>
+        <i type="button" class="card-edit fa-solid fa-pen-to-square"></i>
+        <i type="button" class="card-time fa-solid fa-clock"></i>
+        <i type="button" class="card-like fa-solid fa-thumbs-up"></i>
+        <div class="message-Header">
+            <img [src]="'assets/img/image-placeholder.png'"/>
+            <h2>María José</h2>
+        </div>
+        <ng-template #noMessages>
+            <div class="message-Header">
+                <h2>Messages</h2>
+            </div>
+        </ng-template>
+        <mat-divider></mat-divider>
+        <div class="chat-area">
+            <div class="chat-bubble-container">
+                <img matListItemAvatar [src]="'assets/img/image-placeholder.png'"/>
+                <div class="chat-bubble">
+                    Buenos días!
+                    <span class="chat-date">
+                        28/06/2023
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="input-area">
+            <mat-form-field appearance="outline">
+                <!--<i class="fa-solid fa-paperclip"></i>-->
+                <input matInput placeholder="Escribe un mensaje...">
+                <button mat-icon-button matSuffix>
+                    <mat-icon>send</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
     </div>
 </div>
 
