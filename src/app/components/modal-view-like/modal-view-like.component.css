@@ -1,0 +1,41 @@
+.button-close{
+    float: right;
+    margin: 5px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background: white;
+}
+.header-time{
+    text-align: center;
+    color: white;
+    background: #000080;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container-message-like{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.bubble-like{
+    background: #000080;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 18px;
+    padding-left: 8px;
+    padding-right: 100px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    width: fit-content;
+
+    position: relative;
+}
+.bubble-date-like{
+    position: absolute;
+    bottom: 2px;
+    right: 8px;
+    font-size: 0.7rem;
+    color: white;
+} 

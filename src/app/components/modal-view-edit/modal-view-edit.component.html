@@ -1,0 +1,17 @@
+<button class="button-close" mat-icon-button matDialogClose>
+  <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content class="form-container">
+  <header class="header-notes">
+    Notas rapidas
+  </header>
+  <div class="button-notes">
+    <button mat-raised-button (click)="openDialogCreateNote()">Crear</button>
+  </div>
+  <div *ngFor="let note of selectNote" class="chat-bubble-message">
+    <h2>Agente numero 1</h2>
+    <div class="bubble">
+      {{note}}
+    </div>
+  </div>
+</mat-dialog-content>

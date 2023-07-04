@@ -15,6 +15,36 @@
     padding: 24px;
     background: rgba(0,0,0,0.05);
 }
+/*#btn1{
+    display: flex;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+#btn2{
+    display: flex;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+#btn3{
+    display: flex;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+#btn4{
+    display: flex;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+#btn5{
+    display: flex;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}*/
 .chat-list .chat-title{
     font-family: Arial, Helvetica, sans-serif;
     color: #000080;
@@ -63,6 +93,54 @@
 .input-area > mat-form-field{
     width: 100%;
 }
+.send-message{
+    position: fixed;
+    left: 40px;
+}
+.button-send{
+    position: fixed;
+    top: 0.6rem;
+    right: 4px;
+}
+.poppperclip{
+    position: fixed;
+    left: 10px;
+    bottom: 0.9rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+#btn-options{
+    display: none;
+}
+.add-container{
+    position: fixed;
+    bottom: 60px;
+    left: 6px;
+}
+.options a{
+    display: block;
+    background: #c5cae9;
+    color: #000080;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: all 500ms ease;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.options a:hover{
+    background: white;
+}
+#btn-options:checked~ .options a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
 .input-area{
     padding-top: 16px;
     padding-bottom: 8px;
@@ -104,48 +182,51 @@
     margin-right: 16px;
     height: 35px;
 }
-.card-contact{
-    color: black;
+.container-buttons{
     position: fixed;
-    padding-left: 46%;
-    padding-top: 100px;
-    align-items: center;
+    right: 20px;
+    bottom: 280px;
+}
+.select-icons a{
+    display: block;
+    background: #c5cae9;
+    color: #000080;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+}
+.select-icons a:hover{
+    background: white;
+}
+#btn1{
     font-size: 30px;
+    border: none;
+    margin-right: 10px;
     cursor: pointer;
 }
-.card-message{
-    color: black;
-    position: fixed;
-    padding-left: 46%;
-    padding-top: 150px;
-    align-items: center;
+#btn2{
     font-size: 30px;
+    border: none;
+    margin-right: 10px;
     cursor: pointer;
 }
-.card-edit{
-    color: black;
-    position: fixed;
-    padding-left: 46%;
-    padding-top: 200px;
-    align-items: center;
+#btn3{
     font-size: 30px;
+    border: none;
+    margin-right: 10px;
     cursor: pointer;
 }
-.card-time{
-    color: black;
-    position: fixed;
-    padding-left: 46%;
-    padding-top: 250px;
-    align-items: center;
+#btn4{
     font-size: 30px;
+    border: none;
+    margin-right: 10px;
     cursor: pointer;
 }
-.card-like{
-    color: black;
-    position: fixed;
-    padding-left: 46%;
-    padding-top: 300px;
-    align-items: center;
+#btn5{
     font-size: 30px;
+    border: none;
+    margin-right: 10px;
     cursor: pointer;
 }

@@ -1,0 +1,18 @@
+<button class="button-close" mat-icon-button matDialogClose>
+  <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content class="form-container">
+  <header class="header-message">
+    Mensajes rapidos
+  </header>
+  <br>
+  <div *ngFor="let msm of selectMessage" class="chat-bubble-message">
+    <div class="bubble">
+      {{msm}}
+    </div>
+    <mat-icon class="icon-img" matSuffix>person</mat-icon>
+    <div class="container-button-message">
+      <button mat-raised-button >Enviar</button>
+    </div>
+  </div>
+</mat-dialog-content>

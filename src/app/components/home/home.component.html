@@ -39,11 +39,25 @@
         </mat-selection-list>
     </div>
     <div class="messages mat-elevation-z5">
-        <i type="button" class="card-contact fa-solid fa-address-card"></i>
-        <i type="button" class="card-message fa-solid fa-message"></i>
+        <div class="container-buttons">
+            <div class="select-icons">
+                <a id="btn1" class="btn fa-solid fa-address-card" (click)="openDialogCardContact()"></a>
+                <a id="btn2" class="btn fa-solid fa-message" (click)="openDialogCardMessage()"></a>
+                <a id="btn3" class="btn fa-solid fa-pen-to-square" (click)="openDialogCardEdit()"></a>
+                <a id="btn4" class="btn fa-solid fa-clock" (click)="openDialogCardTime()"></a>
+                <a id="btn5" class="btn fa-solid fa-thumbs-up" (click)="openDialogCardLike()"></a>
+            </div>
+        </div>
+        <!--<button id="btn1" class="btn fa-solid fa-address-card" (click)="openDialogCardContact()"></button>
+        <button id="btn2" class="btn fa-solid fa-message" (click)="openDialogCardMessage()"></button>
+        <button id="btn3" class="btn fa-solid fa-pen-to-square" (click)="openDialogCardEdit()"></button>
+        <button id="btn4" class="btn fa-solid fa-clock" (click)="openDialogCardTime()"></button>
+        <button id="btn5" class="btn fa-solid fa-thumbs-up" (click)="openDialogCardLike()"></button>-->
+        <!--<i  class="fa-solid fa-address-card"></i>-->
+        <!--<i type="button" class="card-message fa-solid fa-message"></i>
         <i type="button" class="card-edit fa-solid fa-pen-to-square"></i>
         <i type="button" class="card-time fa-solid fa-clock"></i>
-        <i type="button" class="card-like fa-solid fa-thumbs-up"></i>
+        <i type="button" class="card-like fa-solid fa-thumbs-up"></i>-->
         <div class="message-Header">
             <img [src]="'assets/img/image-placeholder.png'"/>
             <h2>María José</h2>
@@ -67,9 +81,16 @@
         </div>
         <div class="input-area">
             <mat-form-field appearance="outline">
-                <!--<i class="fa-solid fa-paperclip"></i>-->
-                <input matInput placeholder="Escribe un mensaje...">
-                <button mat-icon-button matSuffix>
+                <div class="add-container">
+                    <input type="checkbox" id="btn-options">
+                    <label class="poppperclip" for="btn-options"><i class="fa-solid fa-paperclip"></i></label>
+                    <div class="options">
+                        <a><i class="fa-solid fa-file"></i></a>
+                        <a><i class="fa-regular fa-image"></i></a>
+                    </div>
+                </div>
+                <input class="send-message" matInput placeholder="Escribe un mensaje...">
+                <button class="button-send" mat-icon-button matSuffix>
                     <mat-icon>send</mat-icon>
                 </button>
             </mat-form-field>

@@ -1,0 +1,19 @@
+<button class="button-close" mat-icon-button matDialogClose>
+  <mat-icon>close</mat-icon>
+</button>
+<mat-dialog-content class="form-container-time">
+  <header class="header-time">
+    3/07/2023
+  </header>
+  <br>
+  <div *ngFor="let like of selectLike" class="container-message-like">
+    <mat-icon class="icon-time" matSuffix>person</mat-icon>
+    <div class="bubble-like">
+      {{like}}
+      <div class="bubble-date-like">
+        3/07/2023
+      </div>
+    </div>
+  </div>
+  
+</mat-dialog-content>
